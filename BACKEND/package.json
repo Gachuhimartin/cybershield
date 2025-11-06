@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Enterprise-grade vulnerability scanning backend with nmap integration",
+  "main": "server.js",
+  "type":"module",
+  "scripts": {
+    "start": "node server.js",
+    "worker": "node workers/scanWorker.js",
+    "dev": "nodemon server.js",
+    "dev:worker": "nodemon workers/scanWorker.js"
+  },
+  "keywords": ["security", "nmap", "vulnerability-scanner"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bcryptjs": "^3.0.3",
+    "bullmq": "^5.63.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.2.1",
+    "express-validator": "^7.3.0",
+    "helmet": "^8.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.19.3",
+    "morgan": "^1.10.1",
+    "redis": "^5.9.0",
+    "validator": "^13.15.20",
+    "xml2js": "^0.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
