@@ -1,0 +1,39 @@
+.env
+node_modules/
+.env.example
+
+
+# Environment variables (your secrets!)
+.env
+
+
+# Debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Logs folder
+logs
+*.log
+*.log.*
+
+# Build & Output directories
+dist/
+build/
+
+# OS / Editor garbage files
+.DS_Store
+Thumbs.db
+
+# PM2 logs
+pids
+*.pid
+*.seed
+
+# Coverage (if using jest or nyc)
+coverage/
+
+# Backup / temp files
+*.swp
+*.swo
